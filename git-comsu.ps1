@@ -14,7 +14,7 @@ if (-not $env:GOOGLE_AI_STUDIO_API_KEY) {
 }
 
 # URL of the Google Generative AI API endpoint
-$API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$($env:GOOGLE_AI_STUDIO_API_KEY)"
+$API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$($env:GOOGLE_AI_STUDIO_API_KEY)"
 
 # Function to get the staged changes from Git
 function Get-StagedChanges {
